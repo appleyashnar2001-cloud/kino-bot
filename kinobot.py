@@ -321,7 +321,7 @@ def search_movie(message):
     else:
         bot.reply_to(message, "😔 Bunday kod yoki nom bilan kino topilmadi. Qaytadan tekshirib ko'ring.")
 
-if name == "__main__":
+if __name__ == "__main__":
     t = threading.Thread(target=run_server)
     t.start()
     print("Kino bot ishga tushdi...")
